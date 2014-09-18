@@ -38,13 +38,15 @@ cacheSolve <- function(x, ...) {
   m
 }
 
-#
+#test the functions with a 2x2 matrix
 simple_matrix <- matrix(
   c(4, 2, 7, 6), 
   nrow=2, 
   ncol=2)
 
 listed_matrix <- makeCacheMatrix(simple_matrix)
+cacheSolve(listed_matrix)
+#Data will retrieve from cache
 cacheSolve(listed_matrix)
 
 
